@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="result.css"> -->
+    <link rel="stylesheet" href="quiz.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Dekhsuchi</title>
+</head>
+
+<body>
+    <nav class="navbar marginchange navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Dekhsuchi</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li  class="active"><a href="./quiz.html">Take Test</a></li>
+                <li><a href="./result.html">Results</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" action="/action_page.php">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search" name="search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </nav>
+    <div class="containers">
+        <div class="box" data-tilt>
+
+            <!-- <img src="images/individual_career_counselling-removebg-preview.png" alt="Logo"> -->
+            <h1>QUESTION</h1>
+            <p id="que">what are your fav subjects</p>
+            <div class="options">
+                <div class="one">
+                    <input type="button" value="Maths,Science{physics}" class="btns" id="btn1">
+                    <input type="button" value="Biology,Science" class="btns" id="btn2">
+                </div>
+                <div class="two">
+                    <input type="button" value="Maths" class="btns" id="btn3">
+                    <input type="button" value="social" class="btns" id="btn4">
+                </div>
+            </div>
+
+        </div>
+        <input type="button" onclick="location.href='./result.html'" value="Show Results" class="btn showres btns" id="btn1">
+    </div>
+    <script src="quiz.js">
+
+    </script>
+</body>
+
+</html>
